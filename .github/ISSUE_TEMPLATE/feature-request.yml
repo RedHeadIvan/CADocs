@@ -1,0 +1,27 @@
+name: Пожелание
+description: Предложите улучшение для CADocs
+title: "[FEATURE]: <название>"
+assignees:
+  - RedHeadIvan
+body:
+
+- type: checkboxes
+  attributes:
+    label: Прежде чем продолжить... 
+    options:
+    - label: Я внимательно прочитал руководство пользователя
+      required: true
+
+- type: textarea
+  attributes:
+    label: Описание функционала
+    description: Как должна работать желаемая функция?
+  validations:
+    required: true
+    
+- type: textarea
+  attributes:
+    label: Нормативные ссылки
+    description: Если желаемая функция обусловлена требованиями ЕСКД - укажите номер документа и номера пунктов, где это требование сформулировано
+  validations:
+    required: false

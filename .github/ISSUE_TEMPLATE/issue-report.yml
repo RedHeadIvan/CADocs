@@ -1,0 +1,41 @@
+name: Ошибка
+description: Сообщите о найденной ошибке
+title: "[BUG]: <название>"
+assignees:
+  - RedHeadIvan
+body:
+
+- type: checkboxes
+  attributes:
+    label: Прежде чем продолжить... 
+    options:
+    - label: Я внимательно прочитал руководство пользователя
+      required: true
+
+- type: textarea
+  attributes:
+    label: Описание ошибки
+    description: В чем проявляется ошибка?
+  validations:
+    required: true
+    
+- type: textarea
+  attributes:
+    label: Шаги воспроизведения
+    description: Как воспроизвести ошибку? Опишите по шагам, если необходимо - приложите используемый BOM или сразу файл проекта
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Ожидаемое поведение
+    description: Какое поведение ожидалось? Если оно обусловлена требованиями ЕСКД - укажите номер документа и номера пунктов, где это требование сформулировано
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Версия программы
+    description: В какой версии программы возникла ошибка?
+  validations:
+    required: true
